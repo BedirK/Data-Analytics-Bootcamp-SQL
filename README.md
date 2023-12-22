@@ -1,2 +1,2 @@
-# Data-Analytics-Bootcamp / SQL
+# Data-Analytics-Bootcamp / MSSQL
 MS SQL Studies by Azure Data Studio
