@@ -1,57 +1,14 @@
---Soru: Tablodaki CategoryName ve Description kolonların allians ile çekiniz (Top 5 olarak)
-
-SELECT 
-TOP 5 
-C.CategoryName KategoriAdlari, C.[Description] Aciklamalar FROM Categories C
-
---Soru: İçinde 'A' bulunmayan şehirleri seçiniz
-
-SELECT * FROM Customers
-WHERE
-City NOT LIKE '%A%'
-
---Soru: PostalCode kolonu boş olan ve Region kolonu dolu olan gözlemlerin filtreleyiniz
-
-SELECT PostalCode, Region
-FROM Customers
-WHERE PostalCode IS NULL 
-AND Region IS NOT NULL
-
---Soru: Berlin ve London'un filtreleyin
-
-SELECT *
-FROM Customers
-WHERE City = 'Berlin' OR City = 'London' 
-
-SELECT *
-FROM Customers
-WHERE City IN ('Berlin','London') -- Şematik ve işlem kolaylılığı için çoklu seçimlerde "IN" kullanılabilir.
-
---Soru: Berlin ve London'u içermeyen gözlemleri çekiniz
-
-SELECT *
-FROM Customers
-WHERE City <> 'Berlin' AND City <> 'London'
-
-SELECT *
-FROM Customers
-WHERE City NOT IN ('Berlin','London') 
-
 --Soru: Şehir bilgisi London veya Tacoma olan tüm personelin id , ad ve soyad bilgisini çekiniz
 SELECT EmployeeID, LastName, FirstName, City
 FROM Employees
 WHERE City = 'Tacoma' OR City = 'London'
-
---ROUND 2 
+ 
 --Soru: CategoryId adetlerini ayrı ayrı hesaplanyınız (ürünler)
 
-SELECT
-CategoryID ,
-COUNT(CategoryID) adet
-FROM
-Products
-GROUP BY
-CategoryID
+SELECT CategoryID,
+COUNT (CategoryID) adet
+FROM Products
+GROUP BY CategoryID
 
 --Soru: CategoryId bazında min , max ve ortalama birim fiyatlarını hesaplayınız
 --(Max fiyatlara göre yüksek fiyattan düşük fiyata sıralanması)
@@ -69,7 +26,7 @@ ON C.CustomerID = O.CustomerID
 
 --Soru: Orders tablosunundan OrderID ile Customers tablosundan ContactName’i birleşmiş bir tablodan çekiniz
 
-SELECT O.OrderID, C.ContactName ,COUNT(*)
+SELECT O.OrderID, C.ContactName, COUNT(*)
 FROM Orders O
 INNER JOIN Customers C
 ON O.CustomerID = C.CustomerID   --GROUP BY  C.ContactName , OrderID having COUNT(*)>1   //// TO CHECK DUPLICATE or ERRORS
@@ -130,7 +87,7 @@ HAVING SUM(UnitPrice) < 200
 
 SELECT AVG(UnitPrice) Ortalam_br_fyt FROM 
 (SELECT TOP 5 ProductName, UnitPrice
- FROM Products
+FROM Products
 ORDER BY UnitPrice ASC) A 
 
 --Soru: En pahalı ürününün adı nedir?
