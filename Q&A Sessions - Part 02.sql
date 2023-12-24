@@ -7,7 +7,7 @@ ORDER BY teslim_suresi DESC
 
 --Soru: Hangi kargo şirketine toplam 25000 birimden daha az ödeme yapılmıştır ?
 
-SELECT S.CompanyName, SUM(O.Freight) odeme
+SELECT S.CompanyName, SUM(O.Freight) payment
 FROM Orders O 
 LEFT JOIN Shippers S
 ON O.ShipVia = S.ShipperID  
@@ -111,4 +111,5 @@ FROM Products
 WHERE UnitsInStock < 100;
 
 --Soru: 1997 yılındaki her aya ait toplam miktarı hesaplayıp mevcut ay, o aya ait toplam harcama, bir önceki ve bir sonra ki aya ait toplam harcama bilgilerini paylaşınız
+
 --Soru: Orders tablosunda Ship Region’ı dolu olanların bilgisini tutan ama boş olanları Ship_City’nin ilk 3 harfini büyük harf ile gösterecek şekilde alan query’yi yazınız. COALESCE() fonksiyonu, bir ifade listesindeki ilk boş olmayan değeri döndürmek için kullanılır.
