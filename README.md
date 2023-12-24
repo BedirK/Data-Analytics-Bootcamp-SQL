@@ -1,7 +1,9 @@
 # Data-Analytics-Bootcamp / MSSQL
 MS SQL Studies by Azure Data Studio
-Questions & Answers Session - Part 01
-Questions & Answers Session - Part 02
+
+- Questions & Answers Session - Part 01
+
+- Questions & Answers Session - Part 02
 
 ## NORTHWIND DATA MODEL
 All of the questions and queries in this assignment refer to Northwind Database.
