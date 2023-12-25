@@ -13,7 +13,7 @@ MSSQL Studies by Azure Data Studio
   - *Order Distribution & Product Inventory Analysis*: Optimize global order distribution, track inventory levels, and manage re-order processes.
 
 Relevant tables from the Northwind E-R include: 
-- Orders, Order Details, Employees, Customers, and a Time Dimension table.
+- Orders, Order Details, Employees, Customers, and Time Dimension table.
   
 Key stakeholders include:
 - Employees, Marketing, Finance, and Logistics.
