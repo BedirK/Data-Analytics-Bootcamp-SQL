@@ -7,12 +7,16 @@ MSSQL Studies by Azure Data Studio
 
 - The Northwind database, created by Microsoft for training and educational purposes, and its E-R diagram present numerous business drivers that can be derived as follows:
 
--a.Sales Reporting: Monitor sales metrics related to customers, employees, products, and suppliers.
--b.Order Fulfillment Reporting: Analyze order delivery times to improve efficiency.
--c.Employee Performance Reporting: Evaluate employee performance for potential improvement through rewards or training.
--d.Order Distribution & Product Inventory Analysis: Optimize global order distribution, track inventory levels, and manage re-order processes.
+  - *Sales Reporting*: Monitor sales metrics related to customers, employees, products, and suppliers.
+  - *Order Fulfillment Reporting*: Analyze order delivery times to improve efficiency.
+  - *Employee Performance Reporting*: Evaluate employee performance for potential improvement through rewards or training.
+  - *Order Distribution & Product Inventory Analysis*: Optimize global order distribution, track inventory levels, and manage re-order processes.
 
-Relevant tables from the Northwind E-R include Orders, Order Details, Employees, Customers, and a Time Dimension table. Key stakeholders include Employees, Marketing, Finance, and Logistics.
+Relevant tables from the Northwind E-R include: 
+- Orders, Order Details, Employees, Customers, and a Time Dimension table.
+  
+Key stakeholders include:
+- Employees, Marketing, Finance, and Logistics.
 
 The vision is to ensure customer satisfaction through superior order management and refined inventory analysis practices.
 
@@ -31,9 +35,9 @@ All of the questions and queries in this assignment refer to Northwind DB
 
 # SQL Topics Covered
 
--SELECT/SELECT DISTINCT, ALIAS
--Filtering: WHERE, AND, OR, NOT, HAVING, BETWEEN, IN, LIKE, Wildcards, ANY, ALL
--Grouping: GROUP BY
--Sorting: ORDER BY
--Aggregations: MAX, MIN, AVG, SUM, COUNT, COUNT DISTINCT
--Joining: INNER JOIN, LEFT JOIN, UNION
+- SELECT/SELECT DISTINCT, ALIAS
+- Filtering: WHERE, AND, OR, NOT, HAVING, BETWEEN, IN, LIKE, Wildcards, ANY, ALL, EXCEPT
+- Grouping: GROUP BY
+- Sorting: ORDER BY, ROW_NUMBER
+- Aggregations: MAX, MIN, AVG, SUM, COUNT, COUNT DISTINCT
+- Joining: INNER JOIN, LEFT JOIN, UNION
