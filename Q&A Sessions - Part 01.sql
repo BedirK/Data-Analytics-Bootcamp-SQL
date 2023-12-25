@@ -120,7 +120,7 @@ FROM Orders
 WHERE DATEDIFF(DAY, ShippedDate, RequiredDate) > 0 
 ORDER BY GecikmeSuresi DESC
 
--- ODEV 1 "Geciken Urunler"in ortalama Kac gun Geciktiğini bulan sorguyu yazınız.
+-- "Geciken Urunler"in ortalama Kac gun Geciktiğini bulan sorguyu yazınız.
 
 SELECT OrderID, AVG(GecikmeSuresi) OrtalamaGecikmeSuresi FROM
 (SELECT OrderID, RequiredDate, ShippedDate, DATEDIFF(DAY, ShippedDate, RequiredDate) GecikmeSuresi
@@ -128,7 +128,7 @@ FROM Orders
 WHERE DATEDIFF(DAY, ShippedDate, RequiredDate) > 0 ) A 
 GROUP BY OrderID
 
--- ODEV 2 "Erken Giden Urunler" ortalama kac gun erken gittiğini bulan sorguyu yazınız.
+-- "Erken Giden Urunler" ortalama kac gun erken gittiğini bulan sorguyu yazınız.
 
 SELECT OrderID, AVG(ErkenTeslimSuresi) OrtalamaErkenTeslimSuresi FROM
 (SELECT OrderID, RequiredDate, ShippedDate, DATEDIFF(DAY, RequiredDate, ShippedDate) ErkenTeslimSuresi
