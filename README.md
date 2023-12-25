@@ -16,10 +16,10 @@ Related Query Files:
    - *Order Distribution & Product Inventory Analysis*: Optimize global order distribution, track inventory levels, and manage re-order processes.
 
 Relevant tables from the Northwind E-R include: 
-- Orders, Order Details, Employees, Customers, and Time Dimension table.
+- Orders, Order Details, Employees, Customers, Products, Suppliers and Categories
   
 Key stakeholders include:
-- Employees, Marketing, Finance, and Logistics.
+- Employees, Marketing, Finance, and Logistics
 
 The vision is to ensure customer satisfaction through superior order management and refined inventory analysis practices.
 
@@ -42,6 +42,10 @@ SQL Topics Covered
 - SELECT/SELECT DISTINCT, ALIAS
 - Filtering: WHERE, AND, OR, NOT, HAVING, BETWEEN, IN, LIKE, Wildcards, TOP, EXCEPT
 - Grouping: GROUP BY
-- Sorting: ORDER BY, ROW_NUMBER
+- Sorting: ORDER BY
+- Constraints: NOT NULL
 - Aggregations: MAX, MIN, AVG, SUM, COUNT, COUNT DISTINCT
 - Joining: INNER JOIN, LEFT JOIN, UNION
+- Window Functions: ROW_NUMBER, LAG
+- Advanced Functions: CONCAT, DATEDIFF, ROUND
+- Subqueries: Nested, Correlated
