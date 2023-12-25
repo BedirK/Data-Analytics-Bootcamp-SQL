@@ -31,13 +31,14 @@ Predict potential product shortages for proactive management.
 Evaluate underperforming products and strategize improvements or discontinuation.
 Evaluate discounting strategies for stagnant inventory to stimulate buying interest".
 
-## NORTHWIND Data Model
+NORTHWIND Data Model
+--------------------
 All of the questions and queries in this assignment refer to Northwind DB
 
 ![image](https://github.com/BedirK/Data-Analytics-Bootcamp---SQL/assets/103532330/764a1929-f232-457a-bda1-51c0a67fee77)
 
-# SQL Topics Covered
-
+SQL Topics Covered
+-----------------------
 - SELECT/SELECT DISTINCT, ALIAS
 - Filtering: WHERE, AND, OR, NOT, HAVING, BETWEEN, IN, LIKE, Wildcards, ANY, ALL, EXCEPT
 - Grouping: GROUP BY
