@@ -40,7 +40,7 @@ All of the questions and queries in this assignment refer to Northwind DB
 SQL Topics Covered
 -----------------------
 - SELECT/SELECT DISTINCT, ALIAS
-- Filtering: WHERE, AND, OR, NOT, HAVING, BETWEEN, IN, LIKE, Wildcards, ANY, ALL, EXCEPT
+- Filtering: WHERE, AND, OR, NOT, HAVING, BETWEEN, IN, LIKE, Wildcards, TOP, EXCEPT
 - Grouping: GROUP BY
 - Sorting: ORDER BY, ROW_NUMBER
 - Aggregations: MAX, MIN, AVG, SUM, COUNT, COUNT DISTINCT
