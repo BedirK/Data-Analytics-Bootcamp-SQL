@@ -1,16 +1,19 @@
 ## Northwind Database Querying with MSSQL
 MSSQL Studies by Azure Data Studio
 
-- Questions & Answers Session - Part 01
+Related Query Files:
+-----------------------
+*Questions & Answers - Part 01
 
-- Questions & Answers Session - Part 02
+*Questions & Answers  - Part 02
 
+------------------------------------------------------------------------------------------------------------
 - The Northwind database, created by Microsoft for training and educational purposes, and its E-R diagram present numerous business drivers that can be derived as follows:
 
-  - *Sales Reporting*: Monitor sales metrics related to customers, employees, products, and suppliers.
-  - *Order Fulfillment Reporting*: Analyze order delivery times to improve efficiency.
-  - *Employee Performance Reporting*: Evaluate employee performance for potential improvement through rewards or training.
-  - *Order Distribution & Product Inventory Analysis*: Optimize global order distribution, track inventory levels, and manage re-order processes.
+   - *Sales Reporting*: Monitor sales metrics related to customers, employees, products, and suppliers.
+   - *Order Fulfillment Reporting*: Analyze order delivery times to improve efficiency.
+   - *Employee Performance Reporting*: Evaluate employee performance for potential improvement through rewards or training.
+   - *Order Distribution & Product Inventory Analysis*: Optimize global order distribution, track inventory levels, and manage re-order processes.
 
 Relevant tables from the Northwind E-R include: 
 - Orders, Order Details, Employees, Customers, and Time Dimension table.
@@ -28,7 +31,7 @@ Predict potential product shortages for proactive management.
 Evaluate underperforming products and strategize improvements or discontinuation.
 Evaluate discounting strategies for stagnant inventory to stimulate buying interest".
 
-## NORTHWIND DATA MODEL
+## NORTHWIND Data Model
 All of the questions and queries in this assignment refer to Northwind DB
 
 ![image](https://github.com/BedirK/Data-Analytics-Bootcamp---SQL/assets/103532330/764a1929-f232-457a-bda1-51c0a67fee77)
