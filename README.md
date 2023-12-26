@@ -46,6 +46,6 @@ SQL Topics Covered
 - Constraints: NOT NULL
 - Aggregations: MAX, MIN, AVG, SUM, COUNT, COUNT DISTINCT
 - Joining: INNER JOIN, LEFT JOIN, UNION
-- Window Functions: ROW_NUMBER, LAG
-- Advanced Functions: CONCAT, DATEDIFF, ROUND
+- Window Functions: ROW_NUMBER, RANK, LAG
+- Advanced Functions: CONCAT, DATEDIFF, ROUND, EOMONTH
 - Subqueries: Nested, Correlated
