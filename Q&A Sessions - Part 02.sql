@@ -103,13 +103,33 @@ HAVING COUNT(DISTINCT OrderID) > 10
 SELECT DISTINCT ProductID, Quantity
 FROM [Order Details]
 WHERE quantity > 100
-
 EXCEPT    -- MINUS
-
 SELECT DISTINCT ProductID, UnitsInStock
 FROM Products
 WHERE UnitsInStock < 100;
 
 --Soru: 1997 yılındaki her aya ait toplam miktarı hesaplayıp mevcut ay, o aya ait toplam harcama, bir önceki ve bir sonra ki aya ait toplam harcama bilgilerini paylaşınız
 
---Soru: Orders tablosunda Ship Region’ı dolu olanların bilgisini tutan ama boş olanları Ship_City’nin ilk 3 harfini büyük harf ile gösterecek şekilde alan query’yi yazınız. COALESCE() fonksiyonu, bir ifade listesindeki ilk boş olmayan değeri döndürmek için kullanılır.
+SELECT *, 
+LAG(total_amount) OVER (ORDER BY order_month DESC) AS NextQuota ,
+LEAD(total_amount) OVER (ORDER BY order_month DESC) AS BeforeQuota 
+FROM
+(SELECT order_month, ROUND(SUM(Amount),0) total_amount FROM
+(SELECT
+UnitPrice * Quantity * (1- Discount) as Amount,
+MONTH(o.OrderDate) as order_month
+FROM [Order Details] od
+INNER JOIN Orders o
+ON o.OrderID = od.OrderID
+WHERE YEAR(o.OrderDate) = 1997) T
+GROUP BY order_month) T2
+ORDER BY order_month
+
+--Soru: Orders tablosunda Ship Region’ı dolu olanların bilgisini tutan ama boş olanları Ship_City’nin ilk 3 harfini büyük harf ile gösterecek şekilde alan query’yi yazınız. 
+  Not: COALESCE() fonksiyonu, bir ifade listesindeki ilk boş olmayan değeri döndürmek için kullanılır.
+
+ SELECT ShipRegion, ShipCity,left(ShipCity,3) A, COALESCE (ShipRegion, left(ShipCity,3)) B
+ FROM Orders;
+
+ SELECT *, UPPER(COALESCE (ShipRegion, left(ShipCity,3)))
+ FROM Orders;
