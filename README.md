@@ -3,9 +3,11 @@ MSSQL Studies by Azure Data Studio
 
 Related Query Files:
 -----------------------
-*Questions & Answers - Part 01
+*Questions & Answers  - Part 01
 
 *Questions & Answers  - Part 02
+
+*Questions & Answers  - Part 03
 
 ------------------------------------------------------------------------------------------------------------
 - The Northwind database, created by Microsoft for training and educational purposes, and its E-R diagram present numerous business drivers that can be derived as follows:
