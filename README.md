@@ -51,3 +51,6 @@ SQL Topics Covered
 - Window Functions: ROW_NUMBER, RANK, LAG
 - Advanced Functions: CONCAT, DATEDIFF, ROUND, EOMONTH
 - Subqueries: Nested, Correlated
+- CRUD (Create, Read, Update, Delete) Operations
+- DDL  (Data Definition Language)
+- DML  (Data Manipulation Language)
