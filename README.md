@@ -52,5 +52,5 @@ SQL Topics Covered
 - Advanced Functions: CONCAT, DATEDIFF, ROUND, EOMONTH
 - Subqueries: Nested, Correlated
 - CRUD (Create, Read, Update, Delete) Operations
-- DDL  (Data Definition Language)
-- DML  (Data Manipulation Language)
+- DDL  (Data Definition) Operations
+- DML  (Data Manipulation) Operations
