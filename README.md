@@ -41,10 +41,7 @@ All of the questions and queries in this assignment refer to Northwind DB
 
 SQL Topics Covered
 -----------------------
-- CRUD (Create, Read, Update, Delete) Operations
-- DDL  (Data Definition) Operations
-- DML  (Data Manipulation) Operations
-----------------
+
 - SELECT/SELECT DISTINCT, ALIAS
 - Filtering: WHERE, AND, OR, NOT, HAVING, BETWEEN, IN, LIKE, Wildcards, TOP, EXCEPT
 - Grouping: GROUP BY
@@ -55,3 +52,7 @@ SQL Topics Covered
 - Window Functions: ROW_NUMBER, RANK, LAG
 - Advanced Functions: CONCAT, DATEDIFF, ROUND, EOMONTH
 - Subqueries: Nested, Correlated
+--------------------------------
+- CRUD (Create, Read, Update, Delete) Operations
+- DDL  (Data Definition) Operations
+- DML  (Data Manipulation) Operations
